@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+  {% block body %}
+<head>
+	<title>Login</title>
+</head>
+
+   <!-- content
+   ================================================== -->
+   <section id="content-wrap" class="site-page">
+   	<div class="row">
+   		<div class="col-twelve">
+   			<h1>Admin Login<h2>
+  	 			<section>  
+  	 					
+						<form action="/dashboard" method="post">
+	  					   <fieldset>
+
+	                     <div class="form-field">
+	  						      <input name="username" type="text" id="username" class="full-width" placeholder="Your Name" value="">
+	                     </div>
+
+	                     <div class="form-field">
+	  						      <input name="pass" type="password" id="pass" class="full-width" placeholder="Password">
+	                     </div>
+
+	                     <button type="submit" class="submit button-primary full-width-on-mobile">Login</button>
+
+	  					   </fieldset>
+  				      </form> <!-- end form -->
+
+				</section>
+			</div> <!-- end col-twelve -->
+   	</div> <!-- end row -->		
+   </section> <!-- end content -->
+
+   
+  {% endblock %}

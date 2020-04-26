@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+  {% block body %}
+  <head>
+	<title>About</title>
+</head>
+
+   <!-- content
+   ================================================== -->
+   <section id="content-wrap" class="site-page">
+   	<div class="row">
+   		<div class="col-twelve">
+
+   			<section>  
+
+   				<div class="content-media">						
+						<img src="{{url_for('static',filename='images/about.png')}}">						  
+					</div>
+
+					<div class="primary-content">
+
+						<h1 class="entry-title add-bottom">Learn More About Us.</h1>	
+
+						<p class="lead">Machine Learning is used anywhere from automating mundane tasks to offering intelligent insights, industries in every sector try to benefit from it. You may already be using a device that utilizes it. For example, a wearable fitness tracker like Fitbit, or an intelligent home assistant like Google Home. But there are much more examples of ML in use.</p>
+
+						<div class="row block-1-2 block-tab-full">
+							<div class="bgrid">
+								<h3>Who Uses</h3>
+								<p>1. Yelp – Image Curation at Scale.<br>
+								2. Pinterest – Improved Content Discovery.<br>
+								3. Facebook – Chatbot Army.<br>
+								4. Twitter – Curated Timelines<br>
+								5. Google – Neural Networks and ‘Machines That Dream’.<br>
+								6. Edgecase – Improving Ecommerce Conversion Rates.<br>
+								7. Baidu – The Future of Voice Search.<br>
+								8. HubSpot – Smarter Sales.<br>
+								9. IBM – Better Healthcare.<br>
+								10. Salesforce – Intelligent CRMs.</p>
+							</div>
+
+							<div class="bgrid">
+								<h3>When to</h3>
+								<p>Prediction — Machine learning can also be used in the prediction systems. Considering the loan example, to compute the probability of a fault, the system will need to classify the available data in groups.<br>
+								Image recognition — Machine learning can be used for face detection in an image as well. There is a separate category for each person in a database of several people.<br>
+								Financial industry and trading — companies use ML in fraud investigations and credit checks.</p>
+							</div>
+						</div>
+					</div>						
+				</section>  		
+			</div> <!-- end col-twelve -->
+   	</div> <!-- end row -->
+   </section> <!-- end content -->
+  {% endblock %}

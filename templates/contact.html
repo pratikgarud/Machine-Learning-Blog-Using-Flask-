@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+  {% block body %}
+
+<head>
+	<title>Contact</title>
+</head>
+   <!-- content
+   ================================================== -->
+   <section id="content-wrap" class="site-page">
+   	<div class="row">
+   		<div class="col-twelve">
+   			<h1> May I Help You !!</h1>
+
+  	 			<section>  
+  	 					<img src="{{url_for('static',filename='images/contact.png')}}">
+   				<div class="content-media">	
+					</div>
+
+					<div class="primary-content">
+
+						<h1 class="entry-title add-bottom">Get In Touch With Us.</h1>	
+
+						<p class="lead">A great introduction to machine learning and AI, Machine Learnings features helpful articles on how this technology may affect your work and life. The site’s non-technical guide to artificial intelligence is also particularly useful for those who are interested in jumping into the world of machine learning but don’t have the technical background.</p>
+
+						<div class="row">
+							<div class="col-six tab-full">
+								<h4>Where to Find Us</h4>
+
+					  			<p>Near by Chikalthana Airport<br>
+					         Aurangabad, Maharashtra<br>
+					       	 India
+					         </p>
+
+							</div>
+
+							<div class="col-six tab-full">
+								<h4>Contact Info</h4>
+
+				   			<p>pratikgarud28@gmail.com <br>
+							   	Phone: (+91) 8766881494 			     
+							   </p>
+
+							</div>
+
+						</div>
+
+						<form action="/contact" method="post">
+	  					   <fieldset>
+
+	                     <div class="form-field">
+	  						      <input name="name" type="text" id="cName" class="full-width" placeholder="Your Name" value="">
+	                     </div>
+
+	                     <div class="form-field">
+	  						      <input name="email" type="text" id="cEmail" class="full-width" placeholder="Your Email" value="">
+	                     </div>
+
+	                     <div class="form-field">
+	  						      <input name="ph" type="text" id="Phone_no" class="full-width" placeholder="Phone no"  value="">
+	                     </div>
+
+	                     <div class="message form-field">
+	                        <textarea name="msg" id="cMessage" class="full-width" placeholder="Your Message" ></textarea>
+	                     </div>
+
+	                     <button type="submit" class="submit button-primary full-width-on-mobile">Submit</button>
+
+	  					   </fieldset>
+  				      </form> <!-- end form -->
+
+				</section>
+   		
+
+			</div> <!-- end col-twelve -->
+   	</div> <!-- end row -->		
+   </section> <!-- end content -->
+
+   
+  {% endblock %}

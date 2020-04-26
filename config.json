@@ -1,0 +1,14 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql://root@localhost/blogdata",
+    "prod_uri": "mysql://root@localhost/blogdata",
+    "fb_uri" : "https://www.facebook.com/",
+    "gh_uri" : "https://www.github.com/",
+    "in_uri" : "https://www.instagram.com/",
+    "admin_user" :"pratik",
+    "admin_pass" : "boomkvs",
+    "no_post" :100
+  }
+}

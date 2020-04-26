@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+  {% block body %}
+<head>
+	<title>Edit</title>
+</head>
+
+   <!-- content
+   ================================================== -->
+   <section id="content-wrap" class="site-page">
+   	<div class="row">
+   		<div class="col-twelve">
+   			<a href="/dashboard"><button class="button-primary full-width-on-mobile">Dashboard</button></a>
+   			<a href="/logout"><button class="button-primary full-width-on-mobile">Logout</button></a>
+   			<hr>
+   			<h1> Edit/Add Post</h1>
+
+  	 			<section>  
+   				<div class="content-media">	
+					</div>
+
+					<div class="primary-content">
+
+						<form action="/edit/{{sno}}" method="post">
+	  					   <fieldset>
+
+	                     <div class="form-field">
+	  						      <input name="title" type="text" id="cName" class="full-width" placeholder="Title" value="{{post.title}}">
+	                     </div>
+
+	                     <div class="form-field">
+	  						      <input name="slug" type="text" id="cEmail" class="full-width" placeholder="Slug" value="{{post.slug}}">
+	                     </div>
+
+	                     <div class="form-field">
+	  						      <input name="img_file" type="text" id="Phone_no" class="full-width" placeholder="Img File"  value="{{post.img_file}}">
+	                     </div>
+
+	                     <div class="message form-field">
+	                 	<textarea name="content" id="content" class="full-width" value="{{post.content}}"></textarea>
+	                     </div>
+
+	                     <button type="submit" class="submit button-primary full-width-on-mobile">Submit</button>
+
+	  					   </fieldset>
+  				      </form> <!-- end form -->
+				</section>
+			</div> <!-- end col-twelve -->
+   	</div> <!-- end row -->		
+   </section> <!-- end content -->
+
+   
+  {% endblock %}

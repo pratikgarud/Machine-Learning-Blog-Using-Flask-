@@ -1,0 +1,57 @@
+
+{% extends "layout.html" %}
+  {% block body %}
+   <!-- masonry
+   ================================================== -->
+   <body>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <section id="bricks">
+
+   	<div class="row masonry">
+      <h2>Understand how AI will change your work and lifestyle...</h2>
+
+   		<!-- brick-wrapper -->
+         <div class="bricks-wrapper">
+
+         	<div class="grid-sizer"></div>
+
+            {% for post in posts %}
+            {% set fname = 'images/' + post.img_file %}
+         	<article class="brick entry format-standard animate-this">
+
+               <div class="entry-thumb">
+                  <a href="/post/{{post.slug}}" class="thumb-link">
+	                  <img src="{{url_for('static',filename=fname)}}" alt="building">             
+                  </a>
+               </div>
+
+               <div class="entry-text">
+               	<div class="entry-header">
+
+               		<div class="entry-meta">			
+               		</div>
+
+               		<h1 class="entry-title"><a href="/post/{{post.slug}}">{{post.title}}</a></h1>
+                     <li class="date">Posted by Pratik Garud on {{post.date}}</li>
+               	</div>
+						<div class="entry-excerpt">
+              {{post.content[0:100]}}
+						</div>
+               </div>
+        		</article>
+            {% endfor %}
+         </div> <!-- end brick-wrapper --> 
+   	</div> <!-- end row -->
+      <div class="row">
+      <nav class="pagination">
+          <a href="{{prev}}"><span class="page-numbers prev">Prev</span></a>
+          <a href="{{next}}" class="page-numbers next">Next</a>
+        </nav>
+      </div>
+   </section> <!-- end bricks -->
+  
+</div>
+</div>
+</body>
+ {% endblock %}
